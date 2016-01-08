@@ -1,6 +1,7 @@
 targets = \
 	1_two_sum.exec\
     2_add_two_numbers.exec\
+	3_longest_substring_without_repeating_characters.exec\
 
 
 CC = g++
