@@ -5,27 +5,25 @@ public:
     int lengthOfLongestSubstring(string s)
     {
         int ret = 0;
-        int begin = 0;
+        int subStrBegin = 0;
         int i = 0;
-        unordered_map<char, int> m;
-        while(i < s.size())
+        unordered_map<char, int> m; //用已出现过的字符索引的hash表，重复的字符记录最后出现的位置
+        const int size = s.size();
+        while(i < size)
         {
             char ch = s[i];
             auto it = m.find(ch);
-            if(it != m.end() && it->second >= begin)
+            if(it != m.end() && it->second >= subStrBegin) //出现过且在本字符串内
             {
-    //            for(int j = begin; j <= it->second; ++j)
-    //                m.erase(s[j]);
-
-                if(ret < i - begin)
-                    ret = i - begin ;
-                begin = it->second + 1;
+                if(ret < i - subStrBegin)
+                    ret = i - subStrBegin ;
+                subStrBegin = it->second + 1;
             }
             m[ch] = i;
             ++i;
         }
-        if(ret < i - begin)
-            ret = i - begin;
+        if(ret < i - subStrBegin)
+            ret = i - subStrBegin;
         return ret;
     }
 };

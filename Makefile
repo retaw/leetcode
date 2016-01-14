@@ -2,6 +2,9 @@ targets = \
 	1_two_sum.exec\
     2_add_two_numbers.exec\
 	3_longest_substring_without_repeating_characters.exec\
+	4_median_of_two_sorted_arrays.exec\
+	5_longest_palindromic_substring.exec\
+	6_zigzag_conversion.exec\
 
 
 CC = g++

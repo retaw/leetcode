@@ -8,9 +8,10 @@ public:
     vector<int> twoSum_v1(vector<int>& nums, int target)
     {
         vector<int> ret(2);
-        for(int i = 0u; i < nums.size(); ++i)
+        const int size = nums.size();
+        for(int i = 0; i < size; ++i)
         {
-            for(int j = i; j < nums.size(); ++j)
+            for(int j = i; j < size; ++j)
             {
                 if(i != j && nums[i] + nums[j] == target)
                 {
@@ -29,7 +30,8 @@ public:
     {
         vector<int> ret(2);
         unordered_map<int, int> t;
-        for(auto i = 0; i < nums.size(); ++i)
+        const int size = nums.size();
+        for(auto i = 0; i < size; ++i)
         {
             auto it = t.find(target - nums[i]);
             if(it != t.end())
