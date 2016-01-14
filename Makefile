@@ -5,6 +5,7 @@ targets = \
 	4_median_of_two_sorted_arrays.exec\
 	5_longest_palindromic_substring.exec\
 	6_zigzag_conversion.exec\
+	7_reverse_interger.exec\
 
 
 CC = g++
