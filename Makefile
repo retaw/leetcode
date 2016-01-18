@@ -6,6 +6,7 @@ targets = \
 	5_longest_palindromic_substring.exec\
 	6_zigzag_conversion.exec\
 	7_reverse_interger.exec\
+	8_string_to_interger.exec\
 
 
 CC = g++
