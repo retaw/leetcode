@@ -8,6 +8,7 @@ targets = \
 	7_reverse_interger.exec\
 	8_string_to_interger.exec\
 	9_palindrome_number.exec\
+	10_regular_expression_matching.exec\
 
 
 CC = g++
