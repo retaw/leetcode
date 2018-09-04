@@ -42,3 +42,13 @@ using std::unordered_map;
 using namespace std::placeholders;
 
 #endif
+
+
+#ifdef FOR_EXAMINATION
+static int x = []()
+{
+    std::ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+    return 0;
+}();
+#endif
