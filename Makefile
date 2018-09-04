@@ -10,6 +10,7 @@ targets = \
 	9_palindrome_number.exec\
 	10_regular_expression_matching.exec\
 	11_container_with_most_water.exec\
+	12_integer_to_roman.exec\
 
 
 CC = g++
