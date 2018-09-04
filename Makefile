@@ -9,6 +9,7 @@ targets = \
 	8_string_to_interger.exec\
 	9_palindrome_number.exec\
 	10_regular_expression_matching.exec\
+	11_container_with_most_water.exec\
 
 
 CC = g++
