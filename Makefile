@@ -14,6 +14,7 @@ targets = \
 	13_roman_to_integer.exec\
 	14_longest_common_prefix.exec\
 	15_3_sum.exec\
+	502_ipo.exec\
 
 
 CC = g++

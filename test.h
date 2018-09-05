@@ -46,6 +46,8 @@ using std::multiset;
 using std::unordered_set;
 using std::unordered_multiset;
 
+using std::tuple;
+
 using namespace std::placeholders;
 
 #endif
