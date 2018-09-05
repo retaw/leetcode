@@ -13,6 +13,7 @@ targets = \
 	12_integer_to_roman.exec\
 	13_roman_to_integer.exec\
 	14_longest_common_prefix.exec\
+	15_3_sum.exec\
 
 
 CC = g++

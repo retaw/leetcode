@@ -37,7 +37,14 @@ using std::string;
 
 using std::vector;
 using std::map;
+using std::multimap;
 using std::unordered_map;
+using std::unordered_multimap;
+
+using std::set;
+using std::multiset;
+using std::unordered_set;
+using std::unordered_multiset;
 
 using namespace std::placeholders;
 
