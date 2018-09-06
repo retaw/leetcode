@@ -14,6 +14,8 @@ targets = \
 	13_roman_to_integer.exec\
 	14_longest_common_prefix.exec\
 	15_3_sum.exec\
+	16_3sum_closest.exec\
+	17_letter_ombinations_of_a_phone_number.exec\
 	502_ipo.exec\
 
 
