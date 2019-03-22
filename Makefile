@@ -16,6 +16,7 @@ targets = \
 	15_3_sum.exec\
 	16_3sum_closest.exec\
 	17_letter_ombinations_of_a_phone_number.exec\
+	190_reverse_bits.exec\
 	502_ipo.exec\
 
 
