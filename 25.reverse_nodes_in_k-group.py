@@ -6,30 +6,33 @@ class ListNode:
         self.next = next
 
 class Solution:
-
-
-
     def reverseKGroup(self, head: Optional[ListNode], k: int) -> Optional[ListNode]:
-        if k == 1 or not head:
+        if k <= 1 or not head:
             return head
 
         #把lastTail后面的s个点逆序, 返回逆序部分的最后一个
-        def reverse(lastTail: Optional[ListNode], k: int) -> Optional[ListNode]:
-            c = 0
-            head = lastTail.next
-            tail = head
-            while tail.next:
-                n = tail.next
+        def reverse(lastTail: Optional[ListNode], curK: int) -> Optional[ListNode]:
+            tail = lastTail.next
+            if curK < 2 or not tail:
+                return tail
+
+            head = lastTail
+
+            c = 1
+            n = tail.next
+            while n:
                 tail.next = n.next
-                n.next = head
-                head = n
-    
+                n.next    = head.next
+                head.next = n
+                n = tail.next
+
                 c += 1
-                if c == k:
-                    lastTail.next = head
+                if c == curK:
                     return tail
-            return reverse(lastTail, c)
-            None
+
+            if c < curK:
+                return reverse(lastTail, c)
+            return tail
 
         extraHead = ListNode(None, head)
         lastTail = extraHead
@@ -61,9 +64,12 @@ if __name__ == "__main__":
     def printList(ln):
         print(convertList(ln))
 
-    l = [1, 2]
+    l = [1 ,2]
     k = 2
+    l = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+    l = [1, 2, 3, 4, 5]
+    k = 3
     s = Solution()
-    bl = s.reverseKGroup(1, k)
+    bl = s.reverseKGroup(makeList(l), k)
     printList(bl)
 
